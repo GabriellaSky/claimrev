@@ -116,7 +116,7 @@ def generateTfDataset(features):
 if __name__ == "__main__":
     # Define arguments
     parser = argparse.ArgumentParser()
-    parser.add_argument("--input_data", help="Positive samples with citations", required=True, type=str)
+    parser.add_argument("--input_data", help="dataset of pairs of claim versions", required=True, type=str)
     parser.add_argument("--n_epochs", help="Number of epochs", type=int, default=2)
     parser.add_argument("--pretrained_model", help="Model to use to get unlabelled sample weights", type=str,
                         default='bert-base-cased')
